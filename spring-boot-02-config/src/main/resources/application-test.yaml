@@ -1,0 +1,12 @@
+person:
+  name: zhangsan
+  age: 2
+  happy: false
+  birth: 2020/1/1
+  maps:
+    p1: v1
+    p2: v2
+  lists: 1 2 3
+  dog:
+    name: 小狗
+    age: 5

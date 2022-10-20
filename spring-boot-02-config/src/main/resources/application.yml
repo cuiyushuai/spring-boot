@@ -1,0 +1,28 @@
+server:
+  port: 8081
+#选择要激活那个环境块
+spring:
+  http:
+
+  profiles:
+    active: prod
+---
+server:
+  port: 8082
+spring:
+  profiles: dev #配置环境的名称
+
+---
+server:
+  port: 8083
+spring:
+  profiles: prod  #配置环境的名称
+
+
+#  application-test.properties 代表测试环境配置
+#  application-dev.properties 代表开发环境配置
+
+#  优先级1：项目路径下的config文件夹配置文件
+#  优先级2：项目路径下配置文件
+#  优先级3：资源路径下的config文件夹配置文件
+#  优先级4：资源路径下配置文件
