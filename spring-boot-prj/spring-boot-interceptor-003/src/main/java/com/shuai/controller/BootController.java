@@ -23,4 +23,10 @@ public class BootController {
     return "info接口";
   }
 
+  @RequestMapping("/query")
+  @ResponseBody
+  public String query() {
+    return "query接口";
+  }
+
 }
