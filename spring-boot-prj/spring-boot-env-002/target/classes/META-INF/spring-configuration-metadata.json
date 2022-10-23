@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "stu",
+      "type": "com.shuai.vo.Stu",
+      "sourceType": "com.shuai.vo.Stu"
+    }
+  ],
+  "properties": [
+    {
+      "name": "stu.age",
+      "type": "java.lang.String",
+      "sourceType": "com.shuai.vo.Stu"
+    },
+    {
+      "name": "stu.name",
+      "type": "java.lang.String",
+      "sourceType": "com.shuai.vo.Stu"
+    },
+    {
+      "name": "stu.sex",
+      "type": "java.lang.String",
+      "sourceType": "com.shuai.vo.Stu"
+    }
+  ],
+  "hints": []
+}

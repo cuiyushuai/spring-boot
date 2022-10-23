@@ -1,5 +1,7 @@
-package com.shuai.controller;
+package com.shuai.config;
 
+import com.shuai.vo.Stu;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,4 +40,14 @@ public class BootCpntroller {
   public String queryData() {
     return "Hello,Springboot;" + ports + name + "," + age + "," + sex;
   }
+
+  @Autowired
+  private Stu stu;
+
+  @RequestMapping("/stu")
+  @ResponseBody
+  public String stu() {
+    return "stu:====>" + stu;
+  }
+
 }
