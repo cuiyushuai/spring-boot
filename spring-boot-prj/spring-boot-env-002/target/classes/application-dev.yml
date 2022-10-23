@@ -1,0 +1,8 @@
+server:
+  port: 8082
+
+
+stu:
+  name: zhangsan
+  age: 28
+  sex: 男

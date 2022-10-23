@@ -1,0 +1,7 @@
+# 设置测试环境
+spring:
+  profiles:
+    active: dev
+server:
+  port: 8081
+
