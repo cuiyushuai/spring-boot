@@ -25,4 +25,16 @@ public class StudentController {
     Student student = studentService.queryStu(id);
     return student.toString();
   }
+
+  @RequestMapping("/student/insert")
+  @ResponseBody
+  public String insertStu(String name, String pws) {
+    Student s1 = new Student();
+    s1.setName(name);
+    s1.setPassword(pws);
+    Integer res = studentService.insertStu(s1);
+
+    return "添加人员" + res;
+  }
+
 }

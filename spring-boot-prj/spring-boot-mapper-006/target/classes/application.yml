@@ -11,6 +11,8 @@ spring:
     username: root
 # mybatis
 mybatis:
+  # 扫描xml文件路径
   mapper-locations: classpath:mapper/*.xml
+  #log 日志文件
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

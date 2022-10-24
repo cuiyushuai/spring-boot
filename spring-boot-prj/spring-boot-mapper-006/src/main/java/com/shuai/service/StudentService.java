@@ -10,4 +10,6 @@ import org.apache.ibatis.annotations.Param;
 
 public interface StudentService {
   Student queryStu(@Param("stuID") Integer id);
+
+  Integer insertStu(Student student);
 }

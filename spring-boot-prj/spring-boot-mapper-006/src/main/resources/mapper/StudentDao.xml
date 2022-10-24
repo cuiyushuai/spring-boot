@@ -7,4 +7,9 @@
     <select id="queryStu" parameterType="int" resultType="com.shuai.model.Student">
         select * from t_user where id = #{stuID}
     </select>
+
+
+    <insert id="insertStu" parameterType="com.shuai.model.Student">
+        insert into t_user(name,password) values(#{name},#{password})
+    </insert>
 </mapper>
