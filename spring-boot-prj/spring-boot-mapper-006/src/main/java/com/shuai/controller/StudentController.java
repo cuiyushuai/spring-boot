@@ -3,6 +3,7 @@ package com.shuai.controller;
 import com.shuai.model.Student;
 import com.shuai.service.StudentService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -35,6 +36,13 @@ public class StudentController {
     Integer res = studentService.insertStu(s1);
 
     return "添加人员" + res;
+  }
+
+  @RequestMapping("/student/updateStu/{id}/{name}")
+  @ResponseBody
+  public String updateStu(@PathVariable Integer id, @PathVariable String name) {
+
+    return "updateStu: id = " + id + ",name = " + name;
   }
 
 }
