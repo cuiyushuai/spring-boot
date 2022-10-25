@@ -1,7 +1,5 @@
 package com.shuai.config;
 
-import com.shuai.vo.Student;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -16,8 +14,8 @@ public class SpringConfig {
    * @return Student对象
    * @Bean(name = "***") 相当于 <bean id="***"><bean/>
    */
-  @Bean(name = "zsStudent")
-  public Student createStu() {
-    return new Student("张山", 29, "男");
-  }
+  //  @Bean(name = "zsStudent")
+  //  public Student createStu() {
+  //    return new Student("张山", 29, "男");
+  //  }
 }
