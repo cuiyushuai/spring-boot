@@ -1,9 +1,0 @@
-server:
-  port: 9090
-  servlet:
-    context-path: /myboot
-spring:
-  mvc:
-    view:
-      prefix: /
-      suffix: .jsp
