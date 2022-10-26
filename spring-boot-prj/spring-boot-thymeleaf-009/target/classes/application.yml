@@ -1,0 +1,9 @@
+spring:
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    encoding: UTF-8

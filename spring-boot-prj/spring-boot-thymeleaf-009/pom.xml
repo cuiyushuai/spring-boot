@@ -10,22 +10,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.shuai</groupId>
-    <artifactId>spring-boot-war-008</artifactId>
+    <artifactId>spring-boot-thymeleaf-009</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-
-
+    <name>spring-boot-thymeleaf-009</name>
+    <description>spring-boot-thymeleaf-009</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-
-        <!--导入支持jsp依赖-->
         <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -33,26 +29,13 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
 
-
     <build>
-        <!--打包出来的名称-->
-        <finalName>myboot</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+
         <resources>
             <!--设置webapp 打包后的路径-->
             <resource>
@@ -76,6 +59,12 @@
                 </includes>
             </resource>
         </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
