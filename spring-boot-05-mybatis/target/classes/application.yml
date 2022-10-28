@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    password: root
+    username: root
+
+# mybatis 整和
+mybatis:
+  type-aliases-package: com.shuai.pojo
+  mapper-locations: classpath:mybatis/**/*Mapper.xml
+  #log 日志文件
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 8081
