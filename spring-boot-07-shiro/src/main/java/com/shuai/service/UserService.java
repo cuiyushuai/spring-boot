@@ -13,4 +13,6 @@ public interface UserService {
   List<User> queryUserList();
 
   User getById(Integer id);
+
+  User getByName(String username);
 }

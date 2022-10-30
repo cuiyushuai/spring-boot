@@ -15,4 +15,6 @@ public interface UserMapper {
   List<User> queryUserList();
 
   User getById(Integer id);
+
+  User getByName(String username);
 }
