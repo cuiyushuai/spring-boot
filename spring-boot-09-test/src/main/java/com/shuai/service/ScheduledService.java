@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class ScheduledService {
 
   /**
-   * 参考  https://cron.qqe2.com/  --cron
+   * 参考  <a href="https://cron.qqe2.com/">...</a>  --cron
    */
   @Scheduled(cron = "0/3 * * * * ? ")
   public void hello1() {
